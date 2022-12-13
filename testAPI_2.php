@@ -5,7 +5,7 @@
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=be3a1d6c5b6bf597e6aea03d01ceb7b5"></script>
   </head>
   <body>
-    <div id="map" style="width:100%;height:400px;"></div>
+    <div id="map" style="width:500px;height:400px;"></div>
     <script>
       var testmap = document.getElementById('map'),
       mapoption = {
