@@ -1,0 +1,19 @@
+{
+  "name": "project-b--jeong-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeongjeongwon/Project-B--jeong-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeongjeongwon/Project-B--jeong-/issues"
+  },
+  "homepage": "https://github.com/jeongjeongwon/Project-B--jeong-#readme"
+}
