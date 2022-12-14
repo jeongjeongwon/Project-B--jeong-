@@ -12,6 +12,7 @@
         center: new kakao.maps.LatLng(36.349264, 127.377699),
         level: 3
       }
+      let map = new kakao.maps.Map(mapData, mapOption)
     </script>
   </body>
 </html>
