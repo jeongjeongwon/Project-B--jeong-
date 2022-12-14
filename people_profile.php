@@ -27,7 +27,8 @@
 
     // $jeong = new profileTag("정정원", "26살", "남", "대전대덕구법동");
 
-// //? if내부 class 구현 오류(될줄 알았다) 방식 변경
+//? if내부 class 구현 오류(될줄 알았다) 방식 변경 할 것
+//? class내부에 if문 구현하는것도 오류
 //     if($_SERVER["REQUEST_METHOD"] == "POST"){
 //       class profile{
 //       public $name = text_input($_POST["name"]);
@@ -42,6 +43,27 @@
 //         return $data;
 //       }
 //     }
+
+class profile{
+  public $name;
+  public $age;
+  public $gender;
+  public $adress;
+}
+    $name = $age = $gender = $adress = " ";
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+  $name = text_input($_POST["name"]);
+  $age = text_input($_POST["age"]);
+  $gender = text_input($_POST["gender"]);
+  $adress = text_input($_POST["adress"]);
+}
+
+function text_input($data){
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
     ?>
 
     <h2>개인 정보 입력 장소</h2>
@@ -52,5 +74,12 @@
       주소 : <input type="text" name="adress"><br><br>
       <input type="submit"><br>
     </form>
+
+    <?php
+    echo "이름 : $name<br>";
+    echo "나이 : $age<br>";
+    echo "성별 : $gender<br>";
+    echo "주소 : $adress<br>";
+    ?>
   </body>
 </html>
