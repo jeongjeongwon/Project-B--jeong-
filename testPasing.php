@@ -9,6 +9,7 @@
     $openfile = fopen($file, "r");
 
     //? 파일을 읽고 반환하는 역할
+    //? 기본적인 골자는 fread(파일의 위치, 불러올크기)로 구성되어있다.
     $cont = fread($openfile, filesize($file));
     echo $cont
     ?>
