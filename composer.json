@@ -1,0 +1,12 @@
+{
+    "name": "name/php_jeong",
+    "require": {
+        "laravel/laravel": "^9.3"
+    },
+    "authors": [
+        {
+            "name": "JeongwonJeong",
+            "email": "je970311@gmail.com"
+        }
+    ]
+}
