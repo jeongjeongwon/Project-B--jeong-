@@ -7,6 +7,7 @@
   </head>
 
   <body>
+    <?php ?>
     <div id="map" style="width:500px;height:500px;"></div>
     <p id="result"></p>
 
@@ -23,6 +24,10 @@
         navigator.geolocation.getCurrentPosition(function(position){
           let lat = position.coords.latitude //위도를 가져오는 변수
           let lug = position.coords.longitude //경도를 가져오는 변수
+
+          let alpha = new kakao.maps.LatLng(lat, lug);
+          displayMarker = (alpha)
+          //? 기본적으로 크롬에서는 https에서만 사용가능하다
         })
       }
     </script>
