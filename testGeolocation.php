@@ -7,7 +7,12 @@
   </head>
 
   <body>
-    <?php ?>
+    <?php
+    if(!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] != "on"){
+      header("Location : https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"], true, 301);
+      exit;
+    }
+    ?>
     <div id="map" style="width:500px;height:500px;"></div>
     <p id="result"></p>
 
