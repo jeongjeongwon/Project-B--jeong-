@@ -33,9 +33,9 @@
         draggable: true
       })
 
-      let endPosition = new kakao.maps.LatLng(36.349538, 127.437166);
+      let endPosition = new kakao.maps.LatLng(36.349513, 127.437236);
 
-      let endMarker = new kakao.maps.marker({
+      let endMarker = new kakao.maps.Marker({
         map: map,
         position: endPosition,
         draggable: true
