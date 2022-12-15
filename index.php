@@ -10,13 +10,21 @@
 
     <script>
       let mapData = document.getElementById('map');
+      let Center = new kakao.maps.LatLng(36.349264, 127.377699)
 
       mapOption = {
-        center: new kakao.maps.LatLng(36.349264, 127.377699),
+        center: Center,
         level: 3
       }
-
       let map = new kakao.maps.Map(mapData, mapOption)
+
+      kakao.maps.event.addListener(map, 'click', function(mouseEvent){
+        let latlng = mouseEvent.latLng;
+        let message = "위도 : " + latlng.getLat() + " 경도 : " + latlng.getLng();
+
+        let result = document.getElementById('result');
+        result.innerHTML = message;
+      })
     </script>
   </body>
 </html>
